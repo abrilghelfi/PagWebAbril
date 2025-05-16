@@ -179,3 +179,35 @@ font-weight: bold;
 font-size: 18px;
 padding: 10px, 15px;
 }
+
+.customfooter{
+background-color: #3F5748;
+padding: 40px 0;
+text-align: center;
+}
+
+.redes{
+    display:inline-block;
+    border:none;
+    background: none;
+    cursor:pointer;
+    margin: 0 15px;
+}
+.redes img{
+width: 50px;
+height: 50px;
+transition: tranform 0,2s ease;
+}
+.redes img:hover{
+    transform:scale(1,1);
+}
+
+.footertexto{
+font-size: 30px;
+color: #000000;
+margin: 0;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-top: -15px;
+position: relative;
+}
+
