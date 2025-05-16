@@ -11,7 +11,7 @@ header{
 
 .logo{
     position: absolute;
-    transform: translate(-2px,-350px); /*Traslada al logo -2 pixeles para la izquierda y -420 pixeles hacia arriba.*/
+    transform: translate(-2px,-420px); /*Traslada al logo -2 pixeles para la izquierda y -420 pixeles hacia arriba.*/
 }
 
 .numero {
@@ -40,12 +40,19 @@ header{
 }
 
 .imgfondo img{
-    background-size: cover;
     background-position: center;
     height: 250px;
     overflow: hidden;
     width: 100%;
     filter:blur(4px);
+    margin: 0;
+    display: flex;
+    position: relative;
+    border: 0;
+    padding: 0;
+    bottom: 20px;
+    z-index: -50;
+
 }
 
 .nombre article h1 { 
@@ -69,9 +76,8 @@ header{
 
 body{
     font-family: arial, sans-serif;
-    background-color: #EEEAE1;
+    background-color:#71967C;
     margin: 0;
-    padding: 20px;
     text-align: center;
 }
 
@@ -88,6 +94,7 @@ body{
 .producto {
 width: 200px;
 text-align: center;
+padding-top: 50px;
 }
 
 .producto img{
@@ -114,8 +121,8 @@ text-align: center;
 }
 .producto:hover{
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(187, 104, 104, 0.2);
-    background-color: #EAE1CB;
+    box-shadow: 0 8px 12px rgb(13, 55, 19);
+    background-color: f5f5dc;
 }
 
 
@@ -131,7 +138,7 @@ text-align: center;
 }
 
 .producto p{
-    background-color: #82A17B;
+    background-color: #cce8c7;
     border: 2px solid #000000;
     padding: 5px;
     border-radius: 8px;
@@ -140,36 +147,67 @@ text-align: center;
     margin-top: 5px;
 }
 
-.publicidqad {
-    display: flex;
-    width: 50%;
-    margin-top: 30px;
-}
-    
 .publicidad img {
-  width: 100%;
-  height: 50%;
-  display: block;
-  position: center;
+    width: 50%;
+    position: left;
+    height: auto;
+    top: 4em;
 }
 
 .menu{
-    background-color: chartreuse;
+    background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px, 0px;
 }
 .menu ul{
+    display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
+    gap: 100px;
+    justify-content: center;
+
 }
 .menu ul li{
     display: inline-block;
-    margin: 0px, 15px;
+    margin: 0px, 40px;
 }
 .menu ul li a{
-color: brown;
+color: rgb(255, 255, 255);
 text-decoration: none;
 font-weight: bold;
 font-size: 18px;
+padding: 10px, 15px;
 }
+
+.customfooter{
+background-color: #3F5748;
+padding: 40px 0;
+text-align: center;
+}
+
+.redes{
+    display:inline-block;
+    border:none;
+    background: none;
+    cursor:pointer;
+    margin: 0 15px;
+}
+.redes img{
+width: 50px;
+height: 50px;
+transition: tranform 0,2s ease;
+}
+.redes img:hover{
+    transform:scale(1,1);
+}
+
+.footertexto{
+font-size: 30px;
+color: #000000;
+margin: 0;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin-top: -15px;
+position: relative;
+}
+
